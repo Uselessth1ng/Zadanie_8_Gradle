@@ -14,7 +14,7 @@ public class Tests {
     @Test
     void testDropdown() throws MalformedURLException {
         DesiredCapabilities caps = new DesiredCapabilities("chrome", "120.0", Platform.LINUX);
-        WebDriver driver  = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), caps, false);
+        WebDriver driver  = new RemoteWebDriver(new URL("http://89.169.147.50:4444/wd/hub"), caps, false);
         driver.get("https://the-internet.herokuapp.com/inputs");
         String title = driver.findElement(By.xpath("//h3")).getText();
         assertEquals("Inputs", title);
