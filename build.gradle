@@ -13,6 +13,8 @@ dependencies {
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
     implementation 'org.seleniumhq.selenium:selenium-java:4.25.0'
+    testImplementation 'io.qameta.allure:allure-selenide:+'
+    testImplementation 'io.qameta.allure:allure-junit5:+'
 
 }
 
